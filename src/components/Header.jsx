@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
+import myImage from '../assets/image/logo.png';
+import langImage from '../assets/image/지구.png';
+import Image from '../assets/image/사각형4.png';
 
 const headerNav = [
   {
-    title: "intro",
+    title: "소개",
     url: "#intro"
   },
   {
-    title: "skill",
-    url: "#skill"
+    title: "게임",
+    url: "#game"
   },
   {
-    title: "site",
-    url: "#site"
+    title: "채용",
+    url: "#hire"
   },
   {
-    title: "portfolio",
-    url: "#port"
+    title: "투자정보",
+    url: "#inform"
   },
   {
-    title: "contact",
-    url: "#contact"
+    title: "미디어",
+    url: "#media"
   }
 ]
 
@@ -33,9 +36,7 @@ const Header = () => {
     <header id="header" role="banner">
     <div className="header__inner">
         <div className="header__logo">
-          <h1>
-            <a href="/">portfolio<em>vite</em></a>
-          </h1>
+          <a href="/"><img src={myImage} alt="logo" /></a>        
         </div>
         <nav className={`header__nav ${show ? 'show': ''}`} role="navigation" aria-label="메인 메뉴">
             <ul>
@@ -46,6 +47,17 @@ const Header = () => {
                ))}
             </ul>
         </nav>
+        <div className="header__lang">
+          <ul>
+            <li>
+              <a href="/" className='lang'><img src={langImage} alt="language" /></a>          
+            </li>
+            <li>
+              <a href="/" className='down'><img src={Image} alt="화살표" /></a>          
+            </li>
+          </ul>
+        </div>
+
         <div 
             className="header__nav__mobile" 
             id="headerToggle" 
