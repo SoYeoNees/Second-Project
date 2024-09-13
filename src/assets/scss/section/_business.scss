@@ -1,44 +1,86 @@
 #business {
-    height: 1200px; 
+    height: 1200px;       
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .business__inner {  
-    @include flex-center;
-    width: 100%;   
-    flex-direction: column;
     
     .business__text {
-        padding-top: 134px;
+        padding-top: 135px;
+
         p {            
-            font-size: 30px;
+            font-size: 18px;
             color: #2d90d1;
             font-weight: 500;
-            padding-bottom: 8px;            
+            padding-bottom: 10px;            
 
         }
 
-        // h1 {                
-        //    font-size: 28px;
-        //    font-weight: 800;
-        //    line-height: 1.3;
-        
-        // }
-        // h3 {
-        //     font-size: 15px;
-        //     padding-top: 13px;
-        //     color: var(--subBg200);
-        // }
+        h1 {                
+           font-size: 40px;
+           font-weight: 800;
+           line-height: 1.3;   
+           padding: 5px 0;     
+        }
+
+        h3 {
+            font-size: 28px;
+            padding-top: 13px;
+            padding-bottom: 100px;
+        }
     }
 
     .business__img {
-        // padding-top: 50px;
-        // width: 50px;
-        // height: 50px;
-      
-        // li{            
-        // align-items: center;
-        // justify-content: center;
-        // }
+        display: flex;
+        justify-content: flex-start; /* 왼쪽 정렬 */
+        flex-wrap: wrap;
+        gap: 20px; /* 항목 사이의 간격 */
+        width: 100%; /* 필요에 따라 조정 */
+        margin: 0 auto; /* 중앙 정렬을 위한 자동 여백 */
+        
+        ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: contents;
+        gap: 20px; /* 항목 사이의 간격 */
+        }
+        
+        li {
+            width: calc(33.333% - 14px); /* 3열 레이아웃을 위해 항목 너비 설정 (간격 고려) */
+            box-sizing: border-box; /* 패딩과 테두리를 포함하여 너비를 계산 */
+
+            &:nth-child(4){
+                padding-top: 30px;
+            }
+            &:nth-child(5){
+                padding-top: 30px;
+            }
+        }
+
+        img {
+        width: auto;
+        height: 100px;
+        display: block;
+        }
+
+        div {    
+            margin-top: 10px;            
+        }
+
+        strong {
+            display: block;
+            padding-top: 16px;
+            font-size: 28px;
+            font-weight: 750;
+        }
+
+        p {
+            padding-top: 13px;
+            font-size: 18px;
+        }
     }
+    
 
 }

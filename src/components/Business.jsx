@@ -48,18 +48,51 @@ const Business = () => {
                 </div>
                 <div className='business__img'>
                     <ul>
-                        {businessList.map((list, key) => (
-                        <li key ={key}>
+                       <li>
                             <div>
-                                <img src={list.img} />
+                                <img src={object1} />
                             </div>
                             <div>
-                            <strong>{list.title}</strong>
-                            <p>{list.desc}</p>
+                                <strong>유저중심</strong>
+                                <p>가장 먼저 유저 입장에서<br/>생각합니다.</p>
                             </div>
                         </li>
-
-                        ))}
+                        <li>
+                            <div>
+                                <img src={object2} />
+                            </div>
+                            <div>
+                                <strong>용기</strong>
+                                <p>개척자로서의<br/>용기를 냅니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src={object3} />
+                            </div>
+                            <div>
+                                <strong>효율성</strong>
+                                <p>정말 필요한 일에<br/>집중합니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src={object4} />
+                            </div>
+                            <div>
+                                <strong>주인의식</strong>
+                                <p>한 발자국 더 나아갑니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src={object5} />
+                            </div>
+                            <div>
+                                <strong>커뮤니케이션</strong>
+                                <p>명확하게 커뮤니케이션 합니다.</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
