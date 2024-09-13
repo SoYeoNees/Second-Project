@@ -1,11 +1,10 @@
 #intro{
-    height: 1200px; 
+
     position: relative;
 }
 
 .intro__inner {
-    @include flex-center;
-    width: 100%;   
+    @include flex-center; 
     flex-direction: column;
 
     // @media (max-width: 800px){
