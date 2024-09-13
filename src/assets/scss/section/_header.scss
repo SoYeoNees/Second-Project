@@ -7,14 +7,14 @@
 .header__inner {
     @include flex-between;
     backdrop-filter: blur(15px);
-    padding: 1rem;
+    padding: 18px 35px;
     
     
     .header__logo {
-        padding-left: 10px;
-        
+         
        img {
-        width: 150px;        
+        width: 175px;        
+        
        }
     }
 
@@ -23,26 +23,15 @@
             display: inline;
 
             a {
-                font-size: 14px;
+                font-size: 18px;
                 color: var(--white);
-                padding: 40px;
+                padding: 70px;
             }
         }
     }
 
     .header__lang {
-        li {
-            display: inline;          
-            float: left;
-            padding: 0;
-            margin: -5px;
-
-            img {
-                width: 60%;
-                height: 60%;
-            }
-        }
-        
+        width: 50px;        
     }
    
 }

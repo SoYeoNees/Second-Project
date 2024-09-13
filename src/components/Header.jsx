@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import myImage from '../assets/image/logo.png';
-import langImage from '../assets/image/지구.png';
-import Image from '../assets/image/사각형4.png';
+import langImage from '../assets/image/image_지구본.png';
 
 const headerNav = [
   {
@@ -48,26 +47,7 @@ const Header = () => {
             </ul>
         </nav>
         <div className="header__lang">
-          <ul>
-            <li>
-              <a href="/" className='lang'><img src={langImage} alt="language" /></a>          
-            </li>
-            <li>
-              <a href="/" className='down'><img src={Image} alt="화살표" /></a>          
-            </li>
-          </ul>
-        </div>
-
-        <div 
-            className="header__nav__mobile" 
-            id="headerToggle" 
-            aria-controls="primary-menu" 
-            aria-expanded={show ? "true":"false"} 
-            role="button" 
-            tabIndex="0"
-            onClick={toggleMenu}
-        >
-            <span></span>
+          <a href="/"><img src={langImage} alt="language" /></a>          
         </div>
     </div>
 </header>
