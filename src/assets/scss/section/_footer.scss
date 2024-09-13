@@ -1,0 +1,42 @@
+#footer {
+    height: auto;
+    border-top: 2px solid var(--subBg200);
+}
+
+.footer__inner {
+    width: 1200px;
+    margin: 0 auto;
+    
+    .footer__logo {         
+        img {
+         width: 150px;   
+         padding: 40px 0;     
+        }
+     }
+
+     .footer__familysite {
+        float: right;
+        height: 50px;
+        width: 200px;
+
+        select {
+            float: right;
+            width: 180px;
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+     }
+
+    .footer__address {
+        width: 300px;
+        ul {
+            display: flex;
+            margin-bottom: 18px;
+        }
+    }
+
+    .footer__right {
+
+    }
+}

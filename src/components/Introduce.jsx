@@ -2,7 +2,18 @@ import React from 'react'
 
 const Introduce = () => {
   return (
-    <div>Introduce</div>
+    <section id='introduce'>
+      <div className='introduce__inner'>
+        <div className='introduce__text'>
+            <p>Introduce</p>
+              <div className="introduce__title">
+                <h1>Who we are</h1>
+                <h3>우리는 더 좋은 게임(Better Game)을 만들고 <br/>
+                    세상에 보여주기 위해 모였습니다.</h3>
+              </div>
+        </div>
+      </div>
+    </section>
   )
 }
 

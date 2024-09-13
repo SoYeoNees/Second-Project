@@ -7,30 +7,20 @@ import object5 from "../assets/image/Object5.png"
 
 
 const businessList = [
-    {
-        img: object1,
-        title: "유저중심",
-        desc: "가장 먼저 유저 입장에서 생각합니다."
+      {
+        img: object1
       },
       {
-        img: object2,
-        title: "용기",
-        desc: "개척자로서의 용기를 냅니다."
+        img: object2
       },
       {
-        img: object3,
-        title: "효율성",
-        desc: "정말 필요한 일에 집중합니다."
+        img: object3
       },
       {
-        img: object4,
-        title: "주인의식",
-        desc: "한 발자국 더 나아갑니다."
+        img: object4
       },
       {
-        img: object5,
-        title: "커뮤니케이션",
-        desc: "명확하게 커뮤니케이션 합니다."
+        img: object5
       }
 ]
 
