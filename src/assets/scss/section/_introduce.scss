@@ -1,26 +1,44 @@
 #introduce {
     height: 1200px;
+    position: relative;
 }
 
 .introduce__inner {
+
     .introduce__text {
         width: 1200px;
         margin: 0 auto;
+       
 
-        p {            
+        .text {            
             font-size: 20px;
             color: #2d90d1;
             font-weight: 500;
         }
 
-        h1 {                
-           font-size: 100px;
-           font-weight: 800;
-           line-height: 1.3;   
+        .introduce__title {
+           
+            h1 {                
+               font-size: 100px;
+               font-weight: 800;
+               line-height: 1.3;   
+            }
+    
+            h3 {
+                font-size: 28px;
+                
+            }
         }
 
-        h3 {
-            font-size: 28px;
-        }
+    }
+
+    .img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto; 
+        z-index: -1000000000000;       
     }
 }

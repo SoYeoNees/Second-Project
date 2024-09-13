@@ -10,7 +10,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer__familysite">
-                    <select classname="footer__sitelist">
+                    <select className="footer__sitelist">
                         <option value="/">Family Site</option>
                         <option value="/">패밀리사이트2</option>
                         <option value="/">패밀리사이트3</option>
