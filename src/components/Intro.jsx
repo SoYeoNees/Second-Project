@@ -2,26 +2,22 @@ import React from "react";
 
 import about from "../assets/image/홈페이지PSD.png";
 
-const introText = {
-  title: ["We Make Games Better", "NEXON Games"],
-  desc: ["일상을 뛰어넘는 참신한 재미를 만듭니다.", "놀라운 경험을 선사하는 새로운 세계를 창조합니다."]
-}
 
 const Intro = () => {
     return (
-        <section id="intro" className="w-full">
-            <div className="intro__inner w-[1200px] px-10 mx-auto ">
+        <section id="intro">
+            <div className="intro__inner">
                 <div className="intro__text">
                     <div className="text">
-                        <div>We Make Games Better</div>
-                        <div>NEXON Games</div>                      
+                        <p>We Make Games Better</p>
+                        <p>NEXON Games</p>                      
                     </div>
                     <div className="text__p">
-                        <p>{introText.desc[0]}</p>
-                        <p>{introText.desc[1]}</p>
+                        <p>일상을 뛰어넘는 참신한 재미를 만듭니다.</p>
+                        <p>놀라운 경험을 선사하는 새로운 세계를 창조합니다.</p>
                     </div>
                 </div>
-                <div className="img absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div className="intro__img">
                     <img src={about} alt="어바웃" />
                 </div>
             </div>
