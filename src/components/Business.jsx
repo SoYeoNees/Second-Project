@@ -5,25 +5,6 @@ import object3 from "../assets/image/Object3.png"
 import object4 from "../assets/image/Object4.png"
 import object5 from "../assets/image/Object5.png"
 
-
-const businessList = [
-      {
-        img: object1
-      },
-      {
-        img: object2
-      },
-      {
-        img: object3
-      },
-      {
-        img: object4
-      },
-      {
-        img: object5
-      }
-]
-
 const Business = () => {
     return (
         <section id="business">

@@ -1,36 +1,43 @@
 #header {
     @include position-fixed;
-    z-index: 10000;
-   
+    z-index: 10000;   
 }
 
 .header__inner {
     @include flex-between;
     backdrop-filter: blur(15px);
-    padding: 18px 35px;
+    padding: 33px 60px;
+    height: 135px;
     
     
     .header__logo {
          
        img {
-        width: 175px;        
+        width: 219px;        
+        height: 69px;
        }
     }
 
     .header__nav {
-        li {
-            display: inline;
-
-            a {
-                font-size: 18px;
-                color: var(--white);
-                padding: 70px;
+        @include flex-center;
+        width: 1200px;
+        ul {
+            
+            li {
+                display: inline;
+                padding: 28px 65px;
+                
+                
+                a {
+                    font-size: 18px;
+                    color: var(--white);                
+                }
             }
         }
     }
 
     .header__lang {
-        width: 50px;        
+        width: 60px;        
     }
    
 }

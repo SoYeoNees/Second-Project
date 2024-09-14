@@ -17,17 +17,11 @@ const Intro = () => {
                         <p>놀라운 경험을 선사하는 새로운 세계를 창조합니다.</p>
                     </div>
                 </div>
-                <div className="intro__img">
-                    <img src={about} alt="어바웃" />
-                </div>
             </div>
-            {/* <div className="w-full">
-                <div className="w-[1200px]">
-                    이미지
-                </div>
-                <div>라인</div>
-            </div> */}
-            {/* http://seik1224.dothome.co.kr/lango/index.html */}
+            <div className="intro__img">
+                <img src={about} alt="어바웃" />
+            </div>
+            
         </section>
     );
 };
