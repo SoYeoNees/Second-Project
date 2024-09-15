@@ -6,7 +6,7 @@
 .introduce__inner {   
     width: 1200px;
     margin: 0 auto;
-    padding-top: 350px;
+    padding: 350px 0 0 52px;
 
     .introduce__text {
         
@@ -35,7 +35,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 1920px;
     height: 1360px;
     z-index: -1000000000000;       
 }

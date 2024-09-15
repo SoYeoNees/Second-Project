@@ -7,11 +7,10 @@
     @include flex-between;
     backdrop-filter: blur(15px);
     padding: 33px 60px;
-    height: 135px;
+    height: 100px;
     
     
-    .header__logo {
-         
+    .header__logo {         
        img {
         width: 219px;        
         height: 69px;
@@ -24,13 +23,12 @@
         ul {
             
             li {
-                display: inline;
-                padding: 28px 65px;
-                
+                display: inline;               
                 
                 a {
                     font-size: 18px;
-                    color: var(--white);                
+                    color: var(--white);
+                    padding: 40px 50px;                
                 }
             }
         }
