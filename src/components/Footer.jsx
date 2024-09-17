@@ -33,7 +33,7 @@ const Footer = () => {
                     </li>                        
                 </ul>
               
-                <div className="footer__right">
+                <div className="footer__right">                
                     @NEXON Games All.Rights Reserved.
                 </div>
             </div>

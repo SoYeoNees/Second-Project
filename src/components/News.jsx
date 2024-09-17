@@ -4,6 +4,7 @@ import sudden from "../assets/image/news1.png";
 import games from "../assets/image/news2.png";
 import first from "../assets/image/new3.png";
 import blue from "../assets/image/news4.png";
+import line from "../assets/image/line.png";
 
 const News = () => {
   return (
@@ -85,8 +86,8 @@ const News = () => {
                 </div>
             </div>
           </li>
-        </ul>
-        {/* <div>라인</div> */}
+        </ul>    
+        <div className='line'><img src={line} alt="라인" /></div>    
       </div>
     </section>
 
