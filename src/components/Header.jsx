@@ -46,8 +46,21 @@ const Header = () => {
                ))}
             </ul>
         </nav>
+
         <div className="header__lang">
           <a href="/"><img src={langImage} alt="language" /></a>          
+        </div>
+
+        <div 
+           className="header__nav__mobile"
+           id="headerToggle"
+           aria-controls="primary-menu"
+           aria-expanded={show ? "true" : "false"}
+           role="button" 
+           tabIndex="0"
+           onClick={toggleMenu}
+        >
+        <span></span>
         </div>
     </div>
 </header>

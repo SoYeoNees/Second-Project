@@ -28,17 +28,14 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
   
-    // @media (max-width: 800px) {
-    //     font-size: 14px;
-    //     line-height: 1.4;
-    // }
-}
-  
-body {
-    background-color: var(--black);    
-    color:#fff
 }
 
-html {
+body {
+    background-color: var(--black);    
+    color:#fff;
     width: 1920px;
+
+    @media (max-width: 720px) {
+         //overflow-x: hidden;
+    }
 }

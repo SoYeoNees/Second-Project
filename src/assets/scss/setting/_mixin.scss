@@ -28,17 +28,17 @@
     width: 100%;
 }
 
-@mixin fadeIn($duration: 1s, $delay: 0s) {
-    @keyframes fadeIn {
-      0% {
-        transform: translate3d(0, 100%, 0);
-        visibility: visible;
-      }
-      100% {
-        transform: translateZ(0);
-      }
-    }
+// @mixin fadeIn($duration: 1s, $delay: 0s) {
+//     @keyframes fadeIn {
+//       0% {
+//         transform: translate3d(0, 100%, 0);
+//         visibility: visible;
+//       }
+//       100% {
+//         transform: translateZ(0);
+//       }
+//     }
   
-    animation: fadeIn $duration $delay ease-in-out;
-  }
+//     animation: fadeIn $duration $delay ease-in-out;
+//   }
   

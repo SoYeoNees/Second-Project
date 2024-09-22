@@ -2,17 +2,30 @@
     height: auto;
     border-top: 2px solid var(--subBg200);
     padding-left: 52px;
+
+    @media (max-width: 720px) {
+       height: 533px;
+    }
 }
 
 .footer__inner {
     width: 1200px;
     margin: 0 auto;
+
+
+    @media (max-width: 720px) {
+        padding-top: 100px;;
+     }
     
     .footer__logo {         
         img {
          width: 150px;   
          padding: 40px 0;     
         }
+
+        @media (max-width: 720px) {
+            padding: 0 0 50px 0;
+         }
      }
 
      .footer__familysite {
@@ -34,10 +47,20 @@
      .footer__address {
         // position: relative;
         width: 662px;
+            @media (max-width: 720px) {
+                width: 720px;
+            }
         li {
             display: inline-block;
             font-size: 16px;
             margin: 0 1rem .5rem 0;
+
+            @media (max-width: 720px) {
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+
+           
             strong {
                 padding-right: 10px;
             }
@@ -58,6 +81,10 @@
      .footer__right {
         padding-bottom: 53px;
         color: #666666;
+
+        @media (max-width: 720px) {
+            font-size: 20px;
+        }
      }
 
 }

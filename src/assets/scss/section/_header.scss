@@ -1,13 +1,15 @@
 #header {
     @include position-fixed;
-    z-index: 10000;   
+    z-index: 10000;
+
+ 
 }
 
 .header__inner {
     @include flex-between;
     backdrop-filter: blur(15px);
-    padding: 33px 60px;
-    height: 100px;
+    padding: 38px 60px;
+    height: 130px;
     
     
     .header__logo {         
@@ -19,7 +21,41 @@
 
     .header__nav {
         @include flex-center;
-        width: 1200px;
+
+        @media (max-width: 720px) {
+            display: none;
+            padding: 40px 70px;
+            &.show {
+                display: block;
+
+                ul {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top:90%;
+                    z-index: 10000;
+                    min-width: 100%;
+
+                    li{
+                        display: block;
+                        text-align: right;
+
+                        a {
+                            display: inline-block;
+                            padding: 5px 62px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            // &.show + .header__nav__mobile span::before{
+            //     width: 100px;
+            // }
+            // &.show + .header__nav__mobile span::after{
+            //     width: 100px;
+            // }
+        }
+
         ul {
             
             li {
@@ -35,7 +71,55 @@
     }
 
     .header__lang {
-        width: 60px;        
+        width: 60px;   
+        
+        @media (max-width: 720px) {
+            display: none;          
+            }
+        }
+
+    .header__nav__mobile {
+        display: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+
+    
+        @media (max-width: 720px){
+            display: block;
+        }
     }
+    
+        span {
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: var(--white);
+            margin-top: 19px;
+            position: relative;
+    
+            &::before {
+                content: "";
+                width: 40px;
+                height: 2px;
+                background-color: var(--white);
+                position: absolute;
+                right: 0;
+                top: 15px;
+            }
+            &::after {
+                content: "";
+                width: 40px;
+                height: 2px;
+                background-color: var(--white);
+                position: absolute;
+                left: 0;
+                bottom: 15px;
+            }
+        }
+    }
+    
+    
+
+
    
-}

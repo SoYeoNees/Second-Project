@@ -1,6 +1,12 @@
 #introduce {
     height: 1669px;
-    position: relative;
+
+    @media (max-width:720px) {
+        width: 720px;
+        margin: 0 auto;
+    }
+
+
 }
 
 .introduce__inner {   
@@ -8,22 +14,37 @@
     margin: 0 auto;
     padding: 350px 0 0 52px;
 
+    @media (max-width:720px) {
+        width: 720px;
+        padding: 0;
+    }
+
+
     .introduce__text {
         
         p {            
             font-size: 20px;
             color: #2d90d1;
             font-weight: 500;
+           
         }
 
         h1 {                
            font-size: 120px;
            font-weight: 800;
            line-height: 1.3;   
+
+           @media (max-width:720px) {
+            font-size: 75px;
+        }
         }
 
         h3 {
             font-size: 30px;
+
+            @media (max-width:720px) {
+                font-size: 28px;
+            }
         }
 
 
@@ -31,7 +52,8 @@
 
 }
 
-.introduce__hover {
+.introduce__hover {    
+    position: relative;
     .img {   
         position: absolute;
         left: 50%;
@@ -40,6 +62,14 @@
         width: 1920px;
         height: 1360px;
         z-index: -1000000000000;
+
+        
+        @media (max-width:720px) {
+            padding-top: 700px;
+            width: 1050px;
+            height: 1360px;
+            position: relative;
+        }
     }
 
     .introduce__circle {
@@ -47,16 +77,23 @@
         margin: 0 auto;
         position: relative;
        
-        .circle {
+        .circle {            
             
             visibility: visible;
             display: block;
             
             .circle01 {
-                @include fadeIn;
 
                 width: 320px;
                 height: 463px;
+
+                @media (max-width:720px) {
+                    width: 197px;
+                    height: 280px;
+                    position: absolute;
+                    right: 81%;
+                    bottom: 936px;
+                }
     
     
                 img {
@@ -82,6 +119,13 @@
                 left: 20%;
                 width: 215px;
                 height: 215px;
+
+                @media (max-width:720px) {
+                    width: 107px;
+                    height: 107px;
+                    left: 15%;
+                    top: -1179px;
+                }
             }
             .circle02 {
                 position: absolute;
@@ -90,6 +134,13 @@
                 width: 245px;
                 height: 275px;
                 z-index: 100;
+
+                @media (max-width:720px) {
+                    width: 200px;
+                    height: 222px;
+                    bottom: 687px;
+                    left: 34%;
+                }
 
                 img {
                     &:nth-child(1) {
@@ -114,7 +165,16 @@
                 left: 19%;
                 width: 142px;
                 height: 142px;
+
+                @media (max-width:720px) {
+                    width: 98px;
+                    height: 98px;
+                    bottom: 800px;
+                    left: 29.5%;
+                    z-index: 100;
+                }
             }
+
             .circle03 {
                 position: absolute;
                 top: -24%;
@@ -122,6 +182,13 @@
                 width: 323px;
                 height: 745px;
                 z-index: 100;
+
+                @media (max-width:720px) {
+                    width: 265px;
+                    height: 315px;
+                    right: 74%;
+                    top: -890px;
+                }
 
                 img {
                     &:nth-child(1) {
@@ -146,6 +213,13 @@
                 right: 14%;
                 width: 242px;
                 height: 242px;
+
+                @media (max-width:720px) {
+                    width: 90px;
+                    height: 90px;
+                    right: 68%;
+                    top: -640px;
+                }
             }
             .circle04 {
                 position: absolute;
@@ -153,6 +227,14 @@
                 right: 0;
                 width: 328px;
                 height: 519px;
+
+                @media (max-width:720px) {
+                    width: 326px;
+                    height: 527px;
+                    right: 46%;
+                    bottom: 853px;
+                    z-index: 100;
+                }
 
                 img {
                     &:nth-child(1) {
@@ -178,6 +260,14 @@
                 right: 24%;
                 width: 172px;
                 height: 172px;
+
+                @media (max-width:720px) {
+                    width: 100px;
+                    height: 100px;
+                    right: 66%;
+                    bottom: 1162px;
+                    
+                }
             }
         }
 

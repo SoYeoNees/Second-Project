@@ -3,39 +3,48 @@
 }
 
 .news__inner {
-    
+    width: 1200px;
+    margin: 0 auto;
+
     .news__text {
         padding: 165px 0 0 52px;
-        width: 1200px;
-        margin: 0 auto;
-
+        
         p {            
             font-size: 20px;
             color: #2d90d1;
             font-weight: 500;
-            padding-bottom: 30px;            
-
+            padding-bottom: 30px;     
         }
 
         h1 {                
            font-size: 50px;
            font-weight: 700;
            line-height: 1.2;   
+
+           @media(max-width: 720px) {
+            font-size: 48px;
+           }
         }
 
         h3 {
             font-size: 30px;
             padding-top: 30px;
             padding-bottom: 95px;
+
+            @media(max-width: 720px) {
+                font-size: 28px;
+               }
         }
     }
 }
 
-.news__img {
+.news__img {    
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 150px;
+    padding: 0 ;
     position: relative;
 
     ul {
@@ -43,18 +52,15 @@
     }
     
     li {
-         width: calc(25% - 80px);           
+         width: calc(25% - 30px);           
         }
 
-        img {            
-            width: 353px;
-            height: 353px;
+        img {
             display: block;
             }
 
     .text {
-        width: 353px;
-        padding-top: 70px;   
+        padding-top: 25px;   
 
         .year {
             font-size: 25px;  
@@ -65,7 +71,7 @@
         }
 
         .title {
-            padding-top: 30px;     
+            padding-top: 25px;     
 
             strong {
                 font-size: 20px;
@@ -78,16 +84,20 @@
         }
     }
 
-    .line {       
+    .line { 
         img {
-            width: 100%;
+           //  width: 100%;
             height: 10px;
         }
-        width: 100%;
+        width: 1920px;
         position: absolute;
         top: 25%;
-        right: 0;
+        right: -500px;
 
         z-index: -100000000000;
+
+        @media(max-width: 720px) {
+           display: none;
+        }
     }
 }
