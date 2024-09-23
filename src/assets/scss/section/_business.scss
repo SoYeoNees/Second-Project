@@ -1,50 +1,31 @@
-#business {
-    height: 1209px;       
-    
-    @media (max-width: 720px){
-        width: 720px; 
-     }
-}
-
 .business__inner {  
     width: 1200px;
     margin: 0 auto;
     padding: 140px 0 0 52px;
 
-    @media (max-width: 720px){
-        margin: 0 auto;
-    } 
-    .business__text {
-        
+    @media (max-width: 1024px){
+        width: unset;
+    }
+
+    .business__text {       
    
         p {            
             font-size: 20px;
             color: #2d90d1;
             font-weight: 500;
             padding-bottom: 30px;   
-            
-
         }
 
         h1 {                
            font-size: 50px;
            font-weight: 800;
-           line-height: 1.3;   
-
-           @media (max-width: 720px){
-            font-size: 30px;
-        } 
+           line-height: 1.3;
         }
 
         h3 {
             font-size: 30px;
             padding-top: 30px;
             padding-bottom: 130px;
-
-            @media (max-width: 720px){
-                font-size: 25px;
-                padding-bottom: 100px;
-            } 
         }
     }
 
@@ -55,7 +36,7 @@
         gap: 45px; /* 항목 사이의 간격 */
         width: 100%; /* 필요에 따라 조정 */
         margin: 0 auto; /* 중앙 정렬을 위한 자동 여백 */
-        
+       
        
         ul {
         list-style: none;
@@ -69,8 +50,8 @@
             width: calc(33.333% - 30px); /* 3열 레이아웃을 위해 항목 너비 설정 (간격 고려) */
             box-sizing: border-box; /* 패딩과 테두리를 포함하여 너비를 계산 */
 
-            @media (max-width: 720px){
-            width: calc(50% - 30px);
+            @media (max-width: 1024px){
+                width: calc(50% - 30px);
             }
         }
 

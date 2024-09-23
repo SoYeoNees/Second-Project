@@ -12,7 +12,7 @@ import Main from '../components/Main'
 const HomeView = () => {
   return (
     <>
-        <Header />
+        {/* <Header /> */}
         <Main>
           <Intro />
           <Business/>
@@ -20,7 +20,7 @@ const HomeView = () => {
           {/* <News/> */}
           {/* <Recruit/> */}
         </Main>
-        <Footer />
+        {/* <Footer /> */}
     </>
   )
 }

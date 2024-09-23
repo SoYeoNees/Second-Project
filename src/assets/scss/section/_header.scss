@@ -1,8 +1,6 @@
 #header {
     @include position-fixed;
-    z-index: 10000;
-
- 
+    z-index: 10000; 
 }
 
 .header__inner {
@@ -22,7 +20,7 @@
     .header__nav {
         @include flex-center;
 
-        @media (max-width: 720px) {
+        @media (max-width: 1024px) {
             display: none;
             padding: 40px 70px;
             &.show {
@@ -48,13 +46,8 @@
                     }
                 }
             }
-            // &.show + .header__nav__mobile span::before{
-            //     width: 100px;
-            // }
-            // &.show + .header__nav__mobile span::after{
-            //     width: 100px;
-            // }
         }
+
 
         ul {
             
@@ -72,20 +65,21 @@
 
     .header__lang {
         width: 60px;   
-        
-        @media (max-width: 720px) {
+
+        @media (max-width: 1024px) {
             display: none;          
             }
         }
-
-    .header__nav__mobile {
+        
+        
+        .header__nav__mobile {
         display: none;
         width: 40px;
         height: 40px;
         cursor: pointer;
 
     
-        @media (max-width: 720px){
+        @media (max-width: 1024px){
             display: block;
         }
     }

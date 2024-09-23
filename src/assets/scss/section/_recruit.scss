@@ -1,12 +1,10 @@
 #recruit {
-    height: 1095px;   
     position: relative;
 
-    .recruit__img {        
-        width: 1200px;
+    .recruit__img {
         position: absolute;
         bottom: 245px;
-        right: -345px;    
+        right: 350px;  
             img{
                 width: 705px;
                 height: 183px;     
@@ -82,7 +80,7 @@
 
 .recruit__btn {
     width: 1200px;
-    padding: 104px 0 0 52px;
+    padding: 104px 0 285px 52px;
     margin: 0 auto;
     position: relative;
     cursor: pointer;
@@ -98,6 +96,6 @@
         height: 31px;
         position: absolute;
         left: 85px;
-        bottom: 0;        
+        bottom: 285px;        
         }    
 }

@@ -87,8 +87,8 @@ const News = () => {
             </div>
           </li>
         </ul>    
-        <div className='line'><img src={line} alt="라인" /></div>    
       </div>
+      <div className='line'><img src={line} alt="라인" /></div>    
     </section>
 
     
