@@ -17,8 +17,8 @@ const HomeView = () => {
           <Intro />
           <Business/>
           <Introduce/>
-          <News/>
-          <Recruit/>
+          {/* <News/> */}
+          {/* <Recruit/> */}
         </Main>
         <Footer />
     </>

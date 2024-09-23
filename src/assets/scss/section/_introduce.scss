@@ -54,6 +54,7 @@
 
 .introduce__hover {    
     position: relative;
+    overflow-x: clip;
     .img {   
         position: absolute;
         left: 50%;
