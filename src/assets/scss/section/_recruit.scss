@@ -5,11 +5,12 @@
         position: absolute;
         bottom: 245px;
         right: 350px;  
+        
             img{
                 width: 705px;
                 height: 183px;     
                 
-                @media(max-width: 720px) {
+                @media(max-width: 1600px) {
                     display: none;
                  }
                 }  
@@ -49,14 +50,14 @@
     }
 
     .recruit__inform {
-        width: 380px;
+        width: 400px;
         display: flex;
-        padding-top: 101px;        
+        padding-top: 95px;        
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        gap: 30px 0;
+        gap: 29px 0;
         font-size: 20px;        
         
         @media(max-width: 720px) {
@@ -83,7 +84,6 @@
     padding: 104px 0 285px 52px;
     margin: 0 auto;
     position: relative;
-    cursor: pointer;
     strong{
         border-radius: 40px;
         border: 1px rgb(255, 255, 255) solid;
