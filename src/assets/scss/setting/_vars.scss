@@ -35,6 +35,10 @@ body {
     color:#fff;
     // width: 1920px;
 
+    @media (max-width: 1020px) {
+        overflow-x: hidden;
+   }
+
     @media (max-width: 720px) {
          //overflow-x: hidden;
     }
